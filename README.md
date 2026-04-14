@@ -35,5 +35,5 @@ http://localhost:8080/
 
 #### Get image filtered
 ```bash
-curl --location 'http://localhost:8080/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg'
+curl --location 'http://localhost:8080/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg' --output image-filtered.jpg
 ```
