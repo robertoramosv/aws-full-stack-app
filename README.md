@@ -1,8 +1,5 @@
-# Image Filtered API
-
-
-## Author
-Roberto Ramos Vargas
+# AWS Full Stack Project
+This project consist in the implementation of a Image Filtered API that is deployed in AWS.
 
 
 ## Getting Setup
@@ -18,7 +15,7 @@ npm install
 ## Running the Server Locally
 To run the server locally in developer mode, open terminal and run:
 ```bash
-`npm run dev` or `npm run start`
+npm run dev
 ```
 
 
@@ -26,8 +23,10 @@ To run the server locally in developer mode, open terminal and run:
 
 The source code for this application resides in the ./src directory.
 
+
 #### Test URL
 http://localhost:8080/
+
 
 ## Curl commands
 

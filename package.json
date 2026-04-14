@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "aws-full-stack",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,7 +9,7 @@
     "start": "node src/server.js",
     "dev": "node src/server.js"
   },
-  "author": "",
+  "author": "Roberto Ramos Vargas <roberto.ramosv@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",

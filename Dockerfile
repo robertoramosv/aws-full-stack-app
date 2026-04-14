@@ -1,11 +1,14 @@
-FROM node:17.1-alpine as build-stage
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-RUN npm run start
+FROM node:18-alpine
 
-FROM nginx:stable-alpine as prod-stage
-COPY --from=build-stage /app/build /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+EXPOSE 8080
+CMD [ "node", "src/server.js" ]
