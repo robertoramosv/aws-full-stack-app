@@ -2,8 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { router as imageRoutes } from './routes/imageRoutes.js';
 
-
-
 // Init the Express application
 const app = express();
 
@@ -35,7 +33,7 @@ app.use(express.urlencoded({ extended: true })) //for requests from forms-like d
 // Root Endpoint
 // Displays a simple message to the user
 app.get( "/", async (req, res) => {
-  res.send("try GET /filteredimage?image_url={{}}")
+  res.send("Try GET /filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg")
 } );
 
 // Routes
@@ -43,6 +41,6 @@ app.use(imageRoutes);
 
 // Start the Server
 app.listen( port, () => {
-    console.log( `server running http://localhost:${ port }` );
-    console.log( `press CTRL+C to stop server` );
+    console.log( `Server running http://localhost:${ port }` );
+    console.log( `Press CTRL+C to stop server` );
 } );

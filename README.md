@@ -24,8 +24,8 @@ npm run dev
 The source code for this application resides in the ./src directory.
 
 
-#### Test URL
-http://localhost:8080/
+#### Test URL Local
+http://localhost:8080/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
 
 
 ## Curl commands
@@ -33,4 +33,16 @@ http://localhost:8080/
 #### Get image filtered
 ```bash
 curl --location 'http://localhost:8080/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg' --output image-filtered.jpg
+```
+
+
+#### Test URL AWS
+http://aws-full-stack-project-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg
+
+
+## Curl commands
+
+#### Get image filtered
+```bash
+curl --location 'http://aws-full-stack-project-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg --output image-filtered.jpg'
 ```
