@@ -1,10 +1,10 @@
 # Image Filtered API
 
-**
+
 ## Author
 Roberto Ramos Vargas
 
-***
+
 ## Getting Setup
 
 ### Installing project dependencies
@@ -14,7 +14,6 @@ This project uses NPM to manage software dependencies. NPM Relies on the package
 npm install
 ```
 
-**
 
 ## Running the Server Locally
 To run the server locally in developer mode, open terminal and run:
@@ -22,7 +21,6 @@ To run the server locally in developer mode, open terminal and run:
 `npm run dev` or `npm run start`
 ```
 
-**
 
 ## Project Structure
 
