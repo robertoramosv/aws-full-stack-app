@@ -1,5 +1,5 @@
 # AWS Full Stack Project
-This project consist in the implementation of a Image Filtered API that is deployed in AWS.
+This project consist in the implementation of Image Filtered API that is deployed in AWS.
 
 
 ## Getting Setup
